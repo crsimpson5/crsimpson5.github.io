@@ -3,53 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/style.css">
   <title>Curtis Simpson</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-  <header>
+  <nav class="navbar navbar-light bg-light mb-sm-5">
+    <div class="container">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="nav-bar">
-      <h1>Curtis Simpson</h1>
-      <ul class="nav">
-        <li><a href="index.html">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-  </header>
-
-  <div class="main-content">
-
-    <h2>About Me</h2>
-
-    <div class="body-div"></div>
-
-    <img id="bio-image" src="https://via.placeholder.com/200" alt="A picture of Curtis Simpson">
-
-    <p>In high school I took some coding classes and they ended up being my most enjoyed classes by far. The best
-      part of coding for me is working through a logical problem and then having my program work as I want it to. I
-      am currently working towards a career in web developement.
-    </p><br>
-    <p>I'm the youngest in my family and am 9+ years younger than my sister and brother. I have a playful, loving cat
-      named Ava that always wants my attention.
-    </p><br>
-    <p>My favorite hobbies are gaming and esports. I play competitive team-based games, and enjoy watching the
-      Overwatch League and other esports tournaments. My favorite sport is soccer and I'm a Sporting KC fan. I like
-      things that go fast like cars and rockets. I love science and learning about how things work.
-    </p>
-
+  <div class="container bg-light p-5 shadow-sm">
+    <h1 class="display-3">Curtis Simpson</h1>
+    <p class="lead">Web Developer</p>
+    <br>
+    <a href="portfolio.html" type="button" class="btn btn-dark">My Projects</a>
   </div>
 
-  <footer>
-    <div class="footer"></div>
-  </footer>
-
   <script src="assets/javascript/logic.js"></script>
-
 </body>
 
 </html>

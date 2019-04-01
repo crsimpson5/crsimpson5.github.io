@@ -1,91 +1,101 @@
 <!DOCTYPE html>
-<html>
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curtis Simpson - Portfolio</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="assets/css/style.css">
-  <title>Curtis Simpson</title>
 </head>
 
 <body>
-  <header>
-    <div class="nav-bar">
-      <h1 class="header-name">Curtis Simpson</h1>
-      <ul class="nav">
-        <li><a href="index.html">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+
+  <nav class="navbar navbar-light bg-light mb-5">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Curtis Simpson</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <section class="main-content">
-    <h2>Portfolio</h2>
+  <div class="container bg-light p-5 shadow-sm">
+    <h3 class="display-4 text-center text-lg-left">My Projects</h3>
+    <br>
 
-    <div class="body-div"></div>
-
-    <div class="item">
-      <a href="https://crsimpson5.github.io/Word-Guess-Game/">
-        <img src="https://via.placeholder.com/250x200" alt="Word Guess Game">
-        <div class="item-name">Word Guess Game</div>
-      </a>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card border-secondary">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-4">
+                <img src="assets/images/ask-an-engineer.png" class="img-fluid">
+              </div>
+              <div class="col-lg-8">
+                <h5 class="card-title">Ask an Engineer Forum</h5>
+                <p class="card-text">Forum that allows users to post, comment, and search posts. Collaborative project.</p>
+                <div class="text-right">
+                  <a href="https://ask-an-engineer.herokuapp.com/" type="button" class="btn btn-light">Website</a>
+                  <a href="https://github.com/TrevorCollins/Project-2" type="button"
+                    class="btn btn-light">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card border-secondary">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-4">
+                <img src="assets/images/eat-da-burger.png" class="img-fluid">
+              </div>
+              <div class="col-lg-8">
+                <h5 class="card-title">Eat-Da-Burger!</h5>
+                <p class="card-text">Create a list of every burger you've had, and the ones you want to try.</p>
+                <div class="text-right">
+                  <a href="https://eat-da-burger-cs.herokuapp.com/" type="button" class="btn btn-light">Website</a>
+                  <a href="https://github.com/crsimpson5/burger" type="button"
+                    class="btn btn-light">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <br>
+  </div>
 
-    <div class="item">
-      <a href="https://crsimpson5.github.io/TriviaGame/">
-        <img src="https://via.placeholder.com/250x200" alt="Trivia Game">
-        <div class="item-name">Trivia Game</div>
-      </a>
-    </div>
-
-    <div class="item">
-      <a href="https://crsimpson5.github.io/Animal-Gifs/">
-        <img src="https://via.placeholder.com/250x200" alt="Animal Gifs">
-        <div class="item-name">Animal Gifs</div>
-      </a>
-    </div>
-
-    <div class="item">
-      <a href="https://crsimpson5.github.io/TrainTime">
-        <img src="https://via.placeholder.com/250x200" alt="Train Schedule">
-        <div class="item-name">Train Schedule</div>
-      </a>
-    </div>
-
-    <div class="item">
-      <a href="https://github.com/crsimpson5/liri-node-app">
-        <img src="https://via.placeholder.com/250x200" alt="LIRI Node App">
-        <div class="item-name">LIRI Node App</div>
-      </a>
-    </div>
-
-    <div class="item">
-      <a href="https://github.com/crsimpson5/bamazon">
-        <img src="https://via.placeholder.com/250x200" alt="Bamazon">
-        <div class="item-name">Bamazon</div>
-      </a>
-    </div>
-
-    <div class="item">
-      <a href="https://friend-finder-cs.herokuapp.com/">
-        <img src="https://via.placeholder.com/250x200" alt="Friend Finder">
-        <div class="item-name">Friend Finder</div>
-      </a>
-    </div>
-
-    <div class="item">
-      <a href="https://eat-da-burger-cs.herokuapp.com/">
-        <img src="https://via.placeholder.com/250x200" alt="Eat Da Burger">
-        <div class="item-name">Eat-Da-Burger</div>
-      </a>
-    </div>
-  </section>
-
-  <footer>
-    <div class="footer"></div>
-  </footer>
-
+  <script src="assets/javascript/logic.js"></script>
 </body>
 
 </html>
