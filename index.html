@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Curtis Simpson</title>
 
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -20,42 +21,150 @@
 </head>
 
 <body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Curtis Simpson</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <nav class="navbar navbar-light bg-light mb-sm-5">
-    <div class="container">
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">About me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
     </div>
   </nav>
 
-  <div class="container bg-light p-5 shadow-sm">
-    <h1 class="display-3">Curtis Simpson</h1>
-    <p class="lead">Web Developer</p>
-    <br>
-
-    <p>Hi, my name is Curtis and I'm a full-stack web developer. I enjoy learning new technologies and creating user-friendly applications. Most of my experience is using the MERN stack (MongoDB, Express, React, Node). I love problem solving and am intrigued by efficient algorithms and code.</p>
-    <br><br>
-    <a href="portfolio.html" type="button" class="btn btn-dark">My Projects</a>
+  <!-- About Me -->
+  <div id="hero-image">
+    <div class="container" id="main">
+      <div class="text-center text-white">
+        <h1 class="display-3">Curtis Simpson</h1>
+        <p class="lead">Web Developer</p>
+        <br>
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
+            <div class="jumbotron" id="about">
+              <p>Hi, my name is Curtis and I'm a full-stack web developer. I enjoy learning new technologies and
+                creating user-friendly applications. Most of my experience is using the MERN stack (MongoDB, Express,
+                React, Node). I love problem solving and am intrigued by efficient algorithms and code.</p>
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <a href="#projects" class="btn btn-dark" role="button">My Projects</a>
+      </div>
+    </div>
   </div>
 
-  <script src="assets/javascript/logic.js"></script>
+  <!-- Projects -->
+  <div id="projects">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h1 class="display-3 text-white">Projects</h1>
+      </div>
+
+      <!-- Row 1 -->
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card border-secondary">
+            <div class="card-body">
+              <h5 class="card-title">Clicky Game</h5>
+              <p class="card-text">Test your memory with this React app.
+              </p>
+              <div class="text-right">
+                <a href="https://crsimpson5.github.io/clicky-game/" type="button" class="btn btn-light">Project</a>
+                <a href="https://github.com/crsimpson5/clicky-game" type="button" class="btn btn-light">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card border-secondary">
+            <div class="card-body">
+              <h5 class="card-title">Mongo Scraper</h5>
+              <p class="card-text">Scrapes articles and allows users to comment on them.
+              </p>
+              <div class="text-right">
+                <a href="https://mongo-scraper-cs.herokuapp.com/" type="button" class="btn btn-light">Project</a>
+                <a href="https://github.com/crsimpson5/mongo-scraper" type="button" class="btn btn-light">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card border-secondary">
+            <div class="card-body">
+              <h5 class="card-title">Ask an Engineer Forum</h5>
+              <p class="card-text">Forum that allows users to post, comment, and search posts. Collaborative
+                project.
+              </p>
+              <div class="text-right">
+                <a href="https://ask-an-engineer.herokuapp.com/" type="button" class="btn btn-light">Project</a>
+                <a href="https://github.com/TrevorCollins/Project-2" type="button" class="btn btn-light">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card border-secondary">
+            <div class="card-body">
+              <h5 class="card-title">Eat-Da-Burger!</h5>
+              <p class="card-text">Create a list of every burger you've had, and the ones you want to try.</p>
+              <div class="text-right">
+                <a href="https://eat-da-burger-cs.herokuapp.com/" type="button" class="btn btn-light">Project</a>
+                <a href="https://github.com/crsimpson5/burger" type="button" class="btn btn-light">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card border-secondary">
+            <div class="card-body">
+              <h5 class="card-title">Friend Finder</h5>
+              <p class="card-text">Take a survey and find compatible people from the database.
+              </p>
+              <div class="text-right">
+                <a href="https://friend-finder-cs.herokuapp.com/" type="button" class="btn btn-light">Project</a>
+                <a href="https://github.com/crsimpson5/Friend-Finder" type="button" class="btn btn-light">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mb-5">
+      <a href="#contact" class="btn btn-light" role="button">Contact Me</a>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div id="contact">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h1 class="display-3">Contact Me</h1>
+      </div>
+      <div class="text-center">
+        <p>crsimpson5@gmail.com</p>
+        <p>(913) 353-4018</p>
+        <p><a href="https://github.com/crsimpson5">GitHub</a></p>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

@@ -1,3 +1,44 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-image: url("../images/sayagata-400px.png");
+  font-family: 'Montserrat', sans-serif;
+}
+
+#hero-image {
+  background-image: url("../images/sky.jpg");
+  background-color: black;
+  max-width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+#about {
+  background-color: rgba(0,0,0,.5)
+}
+
+#main {
+  padding-top: 200px;
+  padding-bottom: 50px;
+}
+
+#projects {
+  background-color: rgb(50, 55, 70);
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+
+#contact {
+  background-color: white;
+  min-height: 100vh;
+  padding-top: 150px;
+}
+
+.card {
+  margin-bottom: 50px;
+  min-height: 250px;
 }
