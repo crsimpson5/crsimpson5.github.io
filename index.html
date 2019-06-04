@@ -24,7 +24,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="#">Curtis Simpson</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -62,7 +62,9 @@
           </div>
         </div>
         <br><br>
-        <a href="#projects" class="btn btn-dark" role="button">My Projects</a>
+        <div class="d-none d-lg-block">
+          <a href="#projects" class="btn btn-dark" role="button">My Projects</a>
+        </div>
       </div>
     </div>
   </div>
@@ -79,12 +81,18 @@
         <div class="col-lg-6">
           <div class="card border-secondary">
             <div class="card-body">
-              <h5 class="card-title">Clicky Game</h5>
-              <p class="card-text">Test your memory with this React app.
-              </p>
-              <div class="text-right">
-                <a href="https://crsimpson5.github.io/clicky-game/" type="button" class="btn btn-light">Project</a>
-                <a href="https://github.com/crsimpson5/clicky-game" type="button" class="btn btn-light">GitHub</a>
+              <h5 class="card-title text-center">Clicky Game</h5>
+              <div class="card-text">
+                <p>Memory game. Win by clicking each character only once!</p>
+                <p>Technologies used:</p>
+                <ul>
+                  <li>React</li>
+                  <li>React Bootstrap</li>
+                </ul>
+              </div>
+              <div class="buttons d-flex justify-content-center">
+                <a href="https://crsimpson5.github.io/clicky-game/" class="btn btn-info project-btn">Project</a>
+                <a href="https://github.com/crsimpson5/clicky-game" class="btn btn-info project-btn">GitHub</a>
               </div>
             </div>
           </div>
@@ -92,12 +100,20 @@
         <div class="col-lg-6">
           <div class="card border-secondary">
             <div class="card-body">
-              <h5 class="card-title">Mongo Scraper</h5>
-              <p class="card-text">Scrapes articles and allows users to comment on them.
-              </p>
-              <div class="text-right">
-                <a href="https://mongo-scraper-cs.herokuapp.com/" type="button" class="btn btn-light">Project</a>
-                <a href="https://github.com/crsimpson5/mongo-scraper" type="button" class="btn btn-light">GitHub</a>
+              <h5 class="card-title text-center">Mongo Scraper</h5>
+              <div class="card-text">
+                <p>Scrapes articles and allows users to comment on them.</p>
+                <p>Technologies used:</p>
+                <ul>
+                  <li>Handlebars</li>
+                  <li>MongoDB/Mongoose</li>
+                  <li>Cheerio</li>
+                </ul>
+              </div>
+
+              <div class="buttons d-flex justify-content-center">
+                <a href="https://mongo-scraper-cs.herokuapp.com/" class="btn btn-info project-btn">Project</a>
+                <a href="https://github.com/crsimpson5/mongo-scraper" class="btn btn-info project-btn">GitHub</a>
               </div>
             </div>
           </div>
@@ -109,13 +125,13 @@
         <div class="col-lg-4">
           <div class="card border-secondary">
             <div class="card-body">
-              <h5 class="card-title">Ask an Engineer Forum</h5>
+              <h5 class="card-title text-center">Ask an Engineer Forum</h5>
               <p class="card-text">Forum that allows users to post, comment, and search posts. Collaborative
                 project.
               </p>
-              <div class="text-right">
-                <a href="https://ask-an-engineer.herokuapp.com/" type="button" class="btn btn-light">Project</a>
-                <a href="https://github.com/TrevorCollins/Project-2" type="button" class="btn btn-light">GitHub</a>
+              <div class="buttons d-flex justify-content-center">
+                <a href="https://ask-an-engineer.herokuapp.com/" class="btn btn-info project-btn">Project</a>
+                <a href="https://github.com/TrevorCollins/Project-2" class="btn btn-info project-btn">GitHub</a>
               </div>
             </div>
           </div>
@@ -123,11 +139,11 @@
         <div class="col-lg-4">
           <div class="card border-secondary">
             <div class="card-body">
-              <h5 class="card-title">Eat-Da-Burger!</h5>
+              <h5 class="card-title text-center">Eat-Da-Burger!</h5>
               <p class="card-text">Create a list of every burger you've had, and the ones you want to try.</p>
-              <div class="text-right">
-                <a href="https://eat-da-burger-cs.herokuapp.com/" type="button" class="btn btn-light">Project</a>
-                <a href="https://github.com/crsimpson5/burger" type="button" class="btn btn-light">GitHub</a>
+              <div class="buttons d-flex justify-content-center">
+                <a href="https://eat-da-burger-cs.herokuapp.com/" class="btn btn-info project-btn">Project</a>
+                <a href="https://github.com/crsimpson5/burger" class="btn btn-info project-btn">GitHub</a>
               </div>
             </div>
           </div>
@@ -135,19 +151,18 @@
         <div class="col-lg-4">
           <div class="card border-secondary">
             <div class="card-body">
-              <h5 class="card-title">Friend Finder</h5>
-              <p class="card-text">Take a survey and find compatible people from the database.
-              </p>
-              <div class="text-right">
-                <a href="https://friend-finder-cs.herokuapp.com/" type="button" class="btn btn-light">Project</a>
-                <a href="https://github.com/crsimpson5/Friend-Finder" type="button" class="btn btn-light">GitHub</a>
+              <h5 class="card-title text-center">Friend Finder</h5>
+              <p class="card-text">Take a survey and find compatible people from the database.</p>
+              <div class="buttons d-flex justify-content-center">
+                <a href="https://friend-finder-cs.herokuapp.com/" class="btn btn-info project-btn">Project</a>
+                <a href="https://github.com/crsimpson5/Friend-Finder" class="btn btn-info project-btn">GitHub</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="text-center mb-5">
+    <div class="d-none d-lg-block text-center m-5">
       <a href="#contact" class="btn btn-light" role="button">Contact Me</a>
     </div>
   </div>

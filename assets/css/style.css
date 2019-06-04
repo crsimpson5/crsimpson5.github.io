@@ -40,5 +40,18 @@ body {
 
 .card {
   margin-bottom: 50px;
-  min-height: 250px;
+  min-height: 300px;
+}
+
+.buttons {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.project-btn {
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom: 20px;
 }
