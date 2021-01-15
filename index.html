@@ -1,185 +1,127 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curtis Simpson</title>
+  <title>Curtis Simpson Portfolio</title>
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+    crossorigin="anonymous" />
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">Curtis Simpson</a>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
+  <nav>
+    <p><a href="#">CURTIS SIMPSON</a></p>
+    <ul>
+      <li>
+        <a href="#projects">PROJECTS</a>
+      </li>
+      <li>
+        <a href="#contact">CONTACT</a>
+      </li>
+    </ul>
   </nav>
 
-  <!-- About Me -->
-  <div id="hero-image">
-    <div class="container" id="main">
-      <div class="text-center text-white">
-        <h1 class="display-3">Curtis Simpson</h1>
-        <p class="lead">Web Developer</p>
-        <br>
-        <div class="row">
-          <div class="col-lg-2"></div>
-          <div class="col-lg-8">
-            <div class="jumbotron" id="about">
-              <p>Hi, my name is Curtis and I'm a full-stack web developer. I enjoy learning new technologies and
-                creating user-friendly applications. Most of my experience is using the MERN stack (MongoDB, Express,
-                React, Node). I love problem solving and am intrigued by efficient algorithms and code.</p>
-            </div>
-          </div>
-        </div>
-        <br><br>
-        <div class="d-none d-lg-block">
-          <a href="#projects" class="btn btn-dark" role="button">My Projects</a>
-        </div>
+  <main>
+
+    <!-- About -->
+    <div id="hero">
+      <div class="container">
+        <h1>Curtis Simpson</h1>
+        <h3>Web Developer</h3>
+        <a class="button" href="#projects">VIEW PROJECTS</a>
       </div>
     </div>
-  </div>
 
-  <!-- Projects -->
-  <div id="projects">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h1 class="display-3 text-white">Projects</h1>
-      </div>
+    <!-- Projects -->
+    <div id="projects">
+      <div class="container">
+        <h2>Projects</h2>
 
-      <!-- Row 1 -->
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="card border-secondary">
-            <div class="card-body">
-              <h5 class="card-title text-center">Clicky Game</h5>
-              <div class="card-text">
-                <p>Memory game. Win by clicking each character only once!</p>
-                <p>Technologies used:</p>
-                <ul>
-                  <li>React</li>
-                  <li>React Bootstrap</li>
-                </ul>
-              </div>
-              <div class="buttons d-flex justify-content-center">
-                <a href="https://crsimpson5.github.io/clicky-game/" class="btn btn-info project-btn">Project</a>
-                <a href="https://github.com/crsimpson5/clicky-game" class="btn btn-info project-btn">GitHub</a>
+        <!-- Row 1 -->
+        <div class="grid">
+          <div class="row1-col">
+            <div class="card">
+              <div class="card-img"></div>
+              <div class="card-body">
+                <h4>Disc Database</h4>
+                <p>An app to find the perfect disc golf disc. Use the filters to find discs with your desired specs.</p>
+                <div class="button-group">
+                  <a class="button" href="https://discdb.herokuapp.com/" target="_blank">View</a>
+                  <a class="button" href="https://github.com/crsimpson5/disc-db" target="_blank">GitHub</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="card border-secondary">
-            <div class="card-body">
-              <h5 class="card-title text-center">Mongo Scraper</h5>
-              <div class="card-text">
-                <p>Scrapes articles and allows users to comment on them.</p>
-                <p>Technologies used:</p>
-                <ul>
-                  <li>Handlebars</li>
-                  <li>MongoDB/Mongoose</li>
-                  <li>Cheerio</li>
-                </ul>
+          <div class="row1-col">
+            <div class="card">
+              <div class="card-img"></div>
+              <div class="card-body">
+                <h4>Memory Game</h4>
+                <p>A game with the objective to click every character once. After a character is clicked, the order is randomized.</p>
+                <div class="button-group">
+                  <a class="button" href="https://crsimpson5.github.io/clicky-game/" target="_blank">View</a>
+                  <a class="button" href="https://github.com/crsimpson5/clicky-game" target="_blank">GitHub</a>
+                </div>
               </div>
+            </div>
+          </div>
 
-              <div class="buttons d-flex justify-content-center">
-                <a href="https://mongo-scraper-cs.herokuapp.com/" class="btn btn-info project-btn">Project</a>
-                <a href="https://github.com/crsimpson5/mongo-scraper" class="btn btn-info project-btn">GitHub</a>
+          <!-- Row 2 -->
+          <div class="row2-col">
+            <div class="card">
+              <div class="card-body">
+                <h4>Portfolio</h4>
+                <p>My portfolio page made using CSS grid, flexbox, and media queries for a responsive design.</p>
+                <div class="button-group">
+                  <a class="button" href="https://github.com/crsimpson5/crsimpson5.github.io" target="_blank">GitHub</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <!-- Row 2 -->
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="card border-secondary">
-            <div class="card-body">
-              <h5 class="card-title text-center">Ask an Engineer Forum</h5>
-              <p class="card-text">Forum that allows users to post, comment, and search posts. Collaborative
-                project.
-              </p>
-              <div class="buttons d-flex justify-content-center">
-                <a href="https://ask-an-engineer.herokuapp.com/" class="btn btn-info project-btn">Project</a>
-                <a href="https://github.com/TrevorCollins/Project-2" class="btn btn-info project-btn">GitHub</a>
+          <div class="row2-col">
+            <div class="card">
+              <div class="card-body">
+                <h4>OWL Stats</h4>
+                <p>Displays the best and the worst performing players in the Overwatch League using the OWL API.</p>
+                <div class="button-group">
+                  <a class="button" href="https://crsimpson5.github.io/owl-stats/" target="_blank">View</a>
+                  <a class="button" href="https://github.com/crsimpson5/owl-stats" target="_blank">GitHub</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card border-secondary">
-            <div class="card-body">
-              <h5 class="card-title text-center">Eat-Da-Burger!</h5>
-              <p class="card-text">Create a list of every burger you've had, and the ones you want to try.</p>
-              <div class="buttons d-flex justify-content-center">
-                <a href="https://eat-da-burger-cs.herokuapp.com/" class="btn btn-info project-btn">Project</a>
-                <a href="https://github.com/crsimpson5/burger" class="btn btn-info project-btn">GitHub</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card border-secondary">
-            <div class="card-body">
-              <h5 class="card-title text-center">Friend Finder</h5>
-              <p class="card-text">Take a survey and find compatible people from the database.</p>
-              <div class="buttons d-flex justify-content-center">
-                <a href="https://friend-finder-cs.herokuapp.com/" class="btn btn-info project-btn">Project</a>
-                <a href="https://github.com/crsimpson5/Friend-Finder" class="btn btn-info project-btn">GitHub</a>
+          <div class="row2-col">
+            <div class="card">
+              <div class="card-body">
+                <h4>Sorbot</h4>
+                <p>A Discord bot made using the Discord.js API.</p>
+                <div class="button-group">
+                  <a class="button" href="https://github.com/crsimpson5/sorbot" target="_blank">GitHub</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="d-none d-lg-block text-center m-5">
-      <a href="#contact" class="btn btn-light" role="button">Contact Me</a>
-    </div>
-  </div>
 
-  <!-- Contact -->
-  <div id="contact">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h1 class="display-3">Contact Me</h1>
-      </div>
-      <div class="text-center">
-        <p>crsimpson5@gmail.com</p>
-        <p>(913) 353-4018</p>
-        <p><a href="https://github.com/crsimpson5">GitHub</a></p>
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p><a href="mailto:crsimpson5@gmail.com">crsimpson5@gmail.com</a></p>
+        <p><a href="https://github.com/crsimpson5" target="_blank">GitHub</a></p>
       </div>
     </div>
-  </div>
+  </main>
+
+  <footer></footer>
 </body>
 
 </html>

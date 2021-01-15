@@ -3,55 +3,248 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  color: white;
 }
 
-#hero-image {
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: 300;
+  padding-bottom: 50px;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: 300;
+  padding-bottom: 10vh;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+nav {
+  background-color: #111722;
+  position: fixed;
+  min-height: 50px;
+  width: 100%;
+  padding: 0 10px;
+  z-index: 5;
+  color: #f2f2f2;
+}
+
+nav ul {
+  float: right;
+  display: inline-flex;
+  justify-content: flex-end;
+  color: #bcc8dc;
+}
+
+nav p {
+  float: left;
+}
+
+nav a {
+  display: block;
+  padding: 20px 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: #f2f2f2;
+}
+
+main {
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  height: 45px;
+  margin-top: -45px;
+  background-color: #bcc8dc;
+  color: #111722;
+  padding: 15px 25px 0 25px;
+  text-align: right;
+}
+
+footer a {
+  color: inherit;
+} 
+
+#hero {
   background-image: url("../images/sky.jpg");
   background-color: black;
   max-width: 100%;
   min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
+  padding-top: 35vh;
 }
 
-#about {
-  background-color: rgba(0,0,0,.5)
-}
-
-#main {
-  padding-top: 200px;
-  padding-bottom: 50px;
+#hero .button {
+  display: none;
 }
 
 #projects {
-  background-color: rgb(50, 55, 70);
+  background-color: #2b3855;
   min-height: 100vh;
   padding-top: 100px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
+}
+
+#projects .button {
+  background-color: white;
+  color: #111722;
+  border: 1px solid #bcc8dc;
+}
+
+#projects .button:hover {
+  background-color: #bcc8dc;
 }
 
 #contact {
   background-color: white;
+  color: black;
   min-height: 100vh;
-  padding-top: 150px;
+  padding-top: 100px;
+}
+
+#contact p {
+  line-height: 2;
+}
+
+#contact a {
+  color: #2b3855;
+}
+
+.button {
+  display: inline-block;
+  background-color: #2b3855;
+  color: #bcc8dc;
+  padding: 12px 18px;
+  border-radius: 25px;
+  font-size: 14px;
+  border: 0 solid black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 6px -4px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 35px 0;
+  margin-bottom: 35px;
+}
+
+.row1-col,
+.row2-col {
+  grid-column: span 12;
 }
 
 .card {
-  margin-bottom: 50px;
-  min-height: 300px;
+  width: 100%;
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  line-height: 1.25;
+  position: relative;
 }
 
-.buttons {
+.card-img {
+  height: 50px;
+  background-color: #fdcc83;
+  border-radius: 4px 4px 0 0;
+}
+
+.card-body {
+  padding: 25px 20px;
+  text-align: left;
+  height: 280px;
+}
+
+.card-body h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card-body p {
+  height: 150px;
+  overflow-y: auto;
+  line-height: 1.5;
+}
+
+.button-group {
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   right: 0;
+  text-align: center;
 }
 
-.project-btn {
-  margin-left: 4px;
-  margin-right: 4px;
-  margin-bottom: 20px;
+@media only screen and (min-width: 900px) {
+  h1 {
+    font-size: 4.5em;
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    font-size: 4em;
+    font-weight: 300;
+    padding-bottom: 50px;
+  }
+
+  #hero .button {
+    display: inline-block;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  .grid {
+    grid-gap: 35px 25px;
+  }
+
+  .row1-col {
+    grid-column: span 6;
+  }
+
+  .row2-col {
+    grid-column: span 4;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    padding: 0;
+    width: 1000px;
+  }
 }
