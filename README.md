@@ -1,3 +1,5 @@
 # Portfolio
 
-https://crsimpson5.github.io/
+This is my personal portfolio page built using CSS grid and media queries.
+
+[https://csimpson.info/](https://csimpson.info/)
